@@ -1,3 +1,17 @@
-h1, p {
-  font-family: Lato;
+*
+{
+  font-family: calibri;
+  text-decoration: none;
+  font-weight: normal;
+  border:0;
+  margin:0;
+}
+input,button,a
+{
+  padding: 10px;
+  box-sizing: border-box;
+}
+body
+{
+  background:slateblue;
 }
