@@ -1,4 +1,4 @@
-export type products
+export type products=
 {
   id:number;
   title:string;
@@ -11,13 +11,16 @@ export type products
   category:string;
   image:string;
 }
-export type tags
+export type tags=
 {
   t:string;
   c:number;
 }
-export type cart
-{
-  
+export type user={
+  id:number;
+  name:string;
+  email:string;
+  phone:number;
+  password:string|number;
 }
-
+export type cart=products&user&{qty:number}
