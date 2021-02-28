@@ -6,6 +6,10 @@
   border:0;
   margin:0;
 }
+h1
+{
+  margin:0;
+}
 input,button,a
 {
   padding: 10px;
@@ -30,4 +34,101 @@ header a
 }
 header a:hover{
   color:white;
+}
+footer
+{
+  line-height:5vh;
+  background:black;
+  color:white;
+  text-align:center;
+}
+
+
+.container
+{
+  height:85vh;
+  overflow:auto;
+}
+
+main
+{
+  display:flex;
+}
+main .left
+{
+  width:20%;
+}
+main .left p{
+  padding:10px;
+  margin:10px;
+  background:black;
+  color:white;
+  border-radius:100px;
+}
+
+main .left p span{
+  float:right;
+}
+main .left p.active{
+  background:white;
+  color:black;
+}
+
+main .right
+{
+  width:80%;
+}
+main .right .filters
+{
+  display:flex;
+  justify-content: center;
+}
+
+main .right .products
+{
+  height:80vh;
+  overflow: auto;
+}
+
+main .right .products .item
+{
+  width:15%;
+  padding:1%;
+  margin:1%;
+  background:white;
+  position:relative;
+  display:inline-table;
+  box-shadow:0 10px 10px black;
+
+}
+main .right .products .item img{
+  width:100%;
+}
+main .right .products .item .tags{
+  position: absolute;
+  top:0;
+  left:0;
+  padding:10px;
+  background:black;
+  color:white;
+}
+main .right .products .item .cart-btn{
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding:10px;
+  background:black;
+  color:white;
+}
+main .right .products .item .discount{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  padding:10px;
+  background:yellow;
+}
+
+main .right .products .item .discount:after{
+  content:"% off";
 }
