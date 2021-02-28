@@ -1,3 +1,4 @@
+
 export type products=
 {
   id:number;
@@ -25,3 +26,17 @@ export type user={
 }
 export type cart=products&user&{qty:number}
 export type orders=products&user&{qty:number}
+
+export type state={
+  products:products[];
+  cart:cart[];
+  users:user[];
+  tags:tags[];
+  tagname:string;
+  col:string;
+  search:string|number;
+  order:boolean;
+  loggedin:boolean;
+  role:string;
+  user:user;
+}
