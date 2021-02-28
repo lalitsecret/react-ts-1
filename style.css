@@ -15,3 +15,19 @@ body
 {
   background:slateblue;
 }
+header
+{
+  line-height:10vh;
+  display:flex;
+  background:black;
+  color:white;
+  align-items:center;
+  justify-content: space-around;
+}
+header a
+{
+  color:silver
+}
+header a:hover{
+  color:white;
+}
