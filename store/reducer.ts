@@ -18,7 +18,7 @@ const initialState:state={
   user:{id:0,name:"",email:"",phone:"",password:""}
 }
 
-const reducer=(state=initialState,action:action):state=>{
+const reducer=(state:state=initialState,action:action):state=>{
   switch(action.type)
   {
     default:
