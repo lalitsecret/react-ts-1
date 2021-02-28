@@ -24,3 +24,4 @@ export type user={
   password:string|number;
 }
 export type cart=products&user&{qty:number}
+export type orders=products&user&{qty:number}
