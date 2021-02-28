@@ -40,3 +40,8 @@ export type state={
   role:string;
   user:user;
 }
+
+export type action={
+  type:string,
+  payload?:any
+}
