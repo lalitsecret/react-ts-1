@@ -1,14 +1,18 @@
 import React from "react";
-
-class Left extends React.Component {
+import { connect } from "react-redux";
+import { LeftProps } from "../types";
+class Left extends React.Component<Props> {
   render() {
+    let { tags, tagname } = this.props;
     return (
       <div className="left">
-        <p>
-          men <span>11</span>
-        </p>
+        {tags.map(x => (
+          <p key={x.t}>
+            {x.t} <span>{x.c}</span>
+          </p>
+        ))}
       </div>
     );
   }
 }
-export default Left;
+export default connect(state => state)(Left);

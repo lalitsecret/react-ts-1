@@ -1,8 +1,17 @@
 import React from "react";
-import Item from './Item'
-class Products extends React.Component {
+import Item from "./Item";
+import { connect } from "react-redux";
+import { ProductsProps } from "../types";
+class Products extends React.Component<ProductsProps> {
   render() {
-    return <div className="products"><Item/></div>;
+    let { products, search, col, order, tagname } = this.props;
+    return (
+      <div className="products">
+        {products.map(x => (
+          <Item key={x.id} x={x} />
+        ))}
+      </div>
+    );
   }
 }
-export default Products;
+export default connect(state => state)(Products);

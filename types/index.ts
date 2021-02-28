@@ -45,3 +45,16 @@ export type action={
   type:string,
   payload?:any
 }
+
+export type LeftProps={
+  tags:tags,
+  tagname:string;
+}
+
+export type ProductsProps={
+  tagname:string;
+  search:string;
+  col:string;
+  order:boolean;
+  products:products[];
+}
